@@ -1,0 +1,9 @@
+{
+  "version": 2,
+  "projects": {
+    "api": "apps/api",
+    "api-interfaces": "libs/api-interfaces",
+    "ssm-nx": "apps/ssm-nx",
+    "ssm-nx-e2e": "apps/ssm-nx-e2e"
+  }
+}
