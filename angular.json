@@ -3,6 +3,7 @@
   "projects": {
     "api": "apps/api",
     "api-interfaces": "libs/api-interfaces",
+    "grids": "libs/grids",
     "ssm-nx": "apps/ssm-nx",
     "ssm-nx-e2e": "apps/ssm-nx-e2e"
   }

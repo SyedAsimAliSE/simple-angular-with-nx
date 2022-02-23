@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/grids",
+  "sourceRoot": "libs/grids/src",
+  "prefix": "angular-nx",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/grids"],
+      "options": {
+        "jestConfig": "libs/grids/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/grids/src/**/*.ts",
+          "libs/grids/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,9 +1,16 @@
-import { Injectable } from '@nestjs/common';
-import { Message } from '@angular-nx/api-interfaces';
+import {Injectable} from '@nestjs/common';
+import {Well} from '@angular-nx/api-interfaces';
 
 @Injectable()
 export class AppService {
-  getData(): Message {
-    return { message: 'Welcome to api!' };
+
+  wellsData: Well[] = [
+    {wellID: "Well 1", wellName: "Well Name 1"},
+    {wellID: "Well 2", wellName: "Well Name 2"},
+  ]
+
+  getWells(): Well[] {
+    return this.wellsData;
   }
+
 }

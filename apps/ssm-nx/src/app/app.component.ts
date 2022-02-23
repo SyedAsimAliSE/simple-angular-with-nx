@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Message } from '@angular-nx/api-interfaces';
+import { Well } from '@angular-nx/api-interfaces';
 
 @Component({
   selector: 'angular-nx-root',
@@ -8,6 +8,6 @@ import { Message } from '@angular-nx/api-interfaces';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  hello$ = this.http.get<Message>('/api/hello');
+  wells = this.http.get<Well[]>('/api/');
   constructor(private http: HttpClient) {}
 }
